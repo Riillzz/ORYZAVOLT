@@ -37,10 +37,11 @@ body{
 }
 
 .card{
+    min-height:150px;
     background:white;
     border-radius:20px;
     padding:25px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.1);
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
     transition:0.3s;
 }
 
@@ -58,14 +59,28 @@ body{
     font-size:40px;
     font-weight:bold;
     color:#0f172a;
+    word-break:break-word;
+    overflow:hidden;
 }
 
-.status-active{
-    color:green;
+.status-startup{
+    color:#3498db;
 }
 
-.status-off{
-    color:red;
+.status-drying{
+    color:#f39c12;
+}
+
+.status-gasification{
+    color:#e67e22;
+}
+
+.status-power{
+    color:#2ecc71;
+}
+
+.status-empty{
+    color:#e74c3c;
 }
 
 .history{
@@ -116,4 +131,20 @@ th{
 .chart-card canvas{
     width:100%;
     height:300px;
+}
+
+@media(max-width:768px){
+
+    .chart-container{
+        grid-template-columns:1fr;
+    }
+
+    .value{
+        font-size:28px;
+    }
+
+    .header h1{
+        font-size:30px;
+    }
+
 }
