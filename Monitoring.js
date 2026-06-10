@@ -26,7 +26,7 @@ monitoringRef.on(
             data.moisture + " %";
 
         document.getElementById(
-            "power")
+            "pressure")
             .innerHTML =
             data.pressure + " Bar";
 
@@ -60,7 +60,6 @@ voltChart.data.datasets[0].data.push(
 if(tempChart.data.labels.length > 20)
 {
     tempChart.data.labels.shift();
-
     tempChart.data.datasets[0]
     .data.shift();
 }
@@ -68,7 +67,6 @@ if(tempChart.data.labels.length > 20)
 if(voltChart.data.labels.length > 20)
 {
     voltChart.data.labels.shift();
-
     voltChart.data.datasets[0]
     .data.shift();
 }
