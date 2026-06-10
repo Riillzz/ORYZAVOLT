@@ -8,6 +8,8 @@ function tambahHistory(
         document.getElementById(
             "historyTable");
 
+    if(!table) return;
+
     const row =
         table.insertRow(0);
 
@@ -19,16 +21,16 @@ function tambahHistory(
         waktu;
 
     row.insertCell(1).innerHTML =
-        temp + " °C";
+        Number(temp).toFixed(1) + " °C";
 
     row.insertCell(2).innerHTML =
-        volt + " V";
+        Number(volt).toFixed(0) + " V";
 
     row.insertCell(3).innerHTML =
-        moist + " %";
+        Number(moist).toFixed(1) + " %";
 
     row.insertCell(4).innerHTML =
-        press + " Bar";
+        Number(press).toFixed(1) + " Bar";
 
     if(table.rows.length > 10)
     {

@@ -133,6 +133,35 @@ th{
     height:300px;
 }
 
+.history{
+    margin-top:30px;
+    background:white;
+    border-radius:20px;
+    padding:20px;
+    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+}
+
+.history h2{
+    margin-bottom:15px;
+    color:#1e293b;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th,td{
+    padding:12px;
+    text-align:center;
+    border-bottom:1px solid #e5e7eb;
+}
+
+th{
+    background:#1e293b;
+    color:white;
+}
+
 @media(max-width:768px){
 
     .chart-container{
