@@ -10,6 +10,8 @@
 
 <link rel="stylesheet"
       href="log in.css">
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 
 <body>
@@ -34,11 +36,11 @@
         id="password"
         placeholder="Password">
 
-    <span
-        class="toggle-password"
-        onclick="togglePassword()">
-        👁️
-    </span>
+    <i
+    class="fa-solid fa-eye toggle-password"
+    id="eyeIcon"
+    onclick="togglePassword()">
+    </i>
     </div>
 
     <button onclick="login()">
