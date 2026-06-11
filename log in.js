@@ -57,10 +57,10 @@ function togglePassword()
         password.type = "text";
 
         eyeIcon.classList.remove(
-            "fa-eye");
+            "fa-eye-slash");
 
         eyeIcon.classList.add(
-            "fa-eye-slash");
+            "fa-eye");
     }
     else
     {
@@ -68,9 +68,9 @@ function togglePassword()
             "password";
 
         eyeIcon.classList.remove(
-            "fa-eye-slash");
+            "fa-eye");
 
         eyeIcon.classList.add(
-            "fa-eye");
+            "fa-eye-slash");
     }
 }
