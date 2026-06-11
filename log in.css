@@ -144,6 +144,9 @@ button:hover{
     top:40%;
     bottom: 40%;
 
+    transform:
+    translateY(50%);
+
     cursor:pointer;
 
     color:#666;
