@@ -20,8 +20,12 @@ body{
 }
 
 .header{
+
     text-align:center;
+
     margin-bottom:30px;
+
+    position:relative;
 }
 
 .header h1{
@@ -284,27 +288,22 @@ th{
 
     display:none;
 
-    position:fixed;
-
-    top:15px;
-    left:15px;
-
-    z-index:1001;
-
-    border:none;
-
     background:#2E7D32;
 
     color:white;
 
+    border:none;
+
+    width:45px;
+    height:45px;
+
+    border-radius:10px;
+
     font-size:24px;
 
-    width:50px;
-    height:50px;
-
-    border-radius:12px;
-
     cursor:pointer;
+
+    margin-bottom:15px;
 }
 
 .overlay{
@@ -388,5 +387,24 @@ th{
     .value{
 
         font-size:32px;
+    }
+}
+
+@media(max-width:768px)
+{
+    .menu-btn{
+        display:block;
+    }
+}
+
+@media(max-width:768px)
+{
+    .menu-btn{
+
+        position:absolute;
+
+        left:0;
+
+        top:0;
     }
 }
