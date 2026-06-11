@@ -25,3 +25,19 @@ function login()
             "Username atau Password Salah";
     }
 }
+
+function togglePassword()
+{
+    const password =
+        document.getElementById(
+            "password");
+
+    if(password.type === "password")
+    {
+        password.type = "text";
+    }
+    else
+    {
+        password.type = "password";
+    }
+}
