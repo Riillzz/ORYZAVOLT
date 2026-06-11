@@ -127,13 +127,17 @@ button:hover{
 .password-box{
 
     position:relative;
+
     width:100%;
 }
 
 .password-box input{
 
     width:100%;
+
     padding-right:45px;
+
+    margin-bottom:15px;
 }
 
 .toggle-password{
@@ -142,18 +146,17 @@ button:hover{
 
     right:15px;
 
-    top:0;
-    bottom:0;
+    top:50%;
 
-    display:flex;
-    align-items:center;
-    justify-content:center;
+    transform:translateY(-80%);
 
     cursor:pointer;
 
     color:#666;
 
     font-size:18px;
+
+    user-select:none;
 }
 
 .toggle-password:hover{
