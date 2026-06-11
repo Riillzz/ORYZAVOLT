@@ -6,6 +6,7 @@
 }
 
 body{
+
     height:100vh;
 
     display:flex;
@@ -14,9 +15,14 @@ body{
 
     background:
     linear-gradient(
-    135deg,
-    #2E7D32,
-    #66BB6A);
+    rgba(0,0,0,0.4),
+    rgba(0,0,0,0.4)
+    ),
+
+    url("sawah.jpg");
+
+    background-size:cover;
+    background-position:center;
 }
 
 .login-container{
@@ -110,4 +116,10 @@ button:hover{
     cursor:pointer;
 
     user-select:none;
+}
+
+.logo{
+
+    font-size:70px;
+    margin-bottom:15px;
 }
