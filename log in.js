@@ -52,8 +52,6 @@ function togglePassword()
     document.getElementById(
         "eyeIcon");
 
-    eyeIcon.classList.add("fa-eye-slash");
-    
     if(password.type === "password")
     {
         password.type = "text";

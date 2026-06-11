@@ -6,8 +6,12 @@
 }
 
 body{
-    background:#f4f6f9;
-    padding:20px;
+    background:
+    linear-gradient(
+    135deg,
+    #eef7ec,
+    #fdfcf6
+    );
 }
 
 .container{
@@ -176,4 +180,37 @@ th{
         font-size:30px;
     }
 
+}
+
+.hero{
+
+    margin-bottom:30px;
+
+    background:
+    linear-gradient(
+    135deg,
+    #2E7D32,
+    #66BB6A);
+
+    color:white;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:
+    0 4px 15px
+    rgba(0,0,0,0.15);
+}
+
+.hero h2{
+
+    margin-bottom:10px;
+
+    font-size:28px;
+}
+
+.hero p{
+
+    opacity:0.95;
 }
