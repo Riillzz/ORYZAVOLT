@@ -285,25 +285,18 @@ th{
 ========================= */
 
 .menu-btn{
-
+    margin-top:15px;
+    margin-left:15px;
     display:none;
-
     background:#2E7D32;
-
     color:white;
-
     border:none;
-
     width:45px;
     height:45px;
-
     border-radius:10px;
-
     font-size:24px;
-
     cursor:pointer;
-
-    margin-bottom:15px;
+    margin-bottom:5px;
 }
 
 .overlay{
