@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ORYZAVOLTMonitoring</title>
+
+<link rel="stylesheet" href="Dashboard.css">
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>ORYZAVOLT</h1>
+        <p>Sistem Monitoring Gasifikasi Biomassa Berbasis IoT</p>
+    </div>
+
+    <div class="grid">
+
+    <div class="card">
+        <div class="title">Suhu Reaktor</div>
+        <div class="value" id="temperature">0 °C</div>
+    </div>
+
+    <div class="card">
+        <div class="title">Tekanan</div>
+        <div class="value" id="pressure">0 Bar</div>
+    </div>
+
+    <div class="card">
+        <div class="title">Tegangan Generator</div>
+        <div class="value" id="voltage">0 V</div>
+    </div>
+
+    <div class="card">
+        <div class="title">Kelembapan Sekam</div>
+        <div class="value" id="moisture">0 %</div>
+    </div>
+
+    <div class="card">
+        <div class="title">Kapasitas Sekam</div>
+        <div class="value" id="biomass">5 kg</div>
+    </div>
+
+    <div class="card">
+        <div class="title">Status Sistem</div>
+        <div class="value" id="status">OFF</div>
+    </div>
+
+    </div>
+    <div class="chart-container">
+
+    <div class="chart-card">
+        <h3>Grafik Suhu Reaktor</h3>
+        <canvas id="tempChart"></canvas>
+    </div>
+
+    <div class="chart-card">
+        <h3>Grafik Tegangan Generator</h3>
+        <canvas id="voltChart"></canvas>
+    </div>
+    </div>
+    <div class="footer">
+        ORYZAVOLT © 2026
+    </div>
+
+</div>
+
+<script src="Koneksi Firebase.js"></script>
+<script src="Chart.js"></script>
+<script src="Monitoring.js"></script>
+
+</body>
+</html>
