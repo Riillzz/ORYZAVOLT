@@ -19,3 +19,13 @@ function closeSidebar()
     .querySelector(".overlay")
     .classList.remove("active");
 }
+
+function logout()
+{
+    localStorage.removeItem(
+        "oryzavoltLogin"
+    );
+
+    window.location.href =
+        "index.html";
+}

@@ -85,13 +85,3 @@ monitoringRef.on(
     tempChart.update();
     voltChart.update();
 });
-
-function logout()
-{
-    localStorage.removeItem(
-        "oryzavoltLogin"
-    );
-
-    window.location.href =
-        "index.html";
-}
