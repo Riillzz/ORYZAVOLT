@@ -141,7 +141,8 @@ button:hover{
     position:absolute;
 
     right:15px;
-    top:50%;
+    top:40%;
+    bottom: 40%;
 
     transform:
     translateY(-50%);
