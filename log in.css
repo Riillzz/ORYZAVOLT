@@ -138,7 +138,7 @@ button:hover{
 
 .toggle-password{
 
-    position:absolute;
+    position:relative;
 
     right:15px;
     top:50%;
