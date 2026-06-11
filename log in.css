@@ -123,3 +123,37 @@ button:hover{
     font-size:70px;
     margin-bottom:15px;
 }
+
+.password-box{
+
+    position:relative;
+    width:100%;
+}
+
+.password-box input{
+
+    width:100%;
+    padding-right:45px;
+}
+
+.toggle-password{
+
+    position:absolute;
+
+    right:15px;
+    top:50%;
+
+    transform:
+    translateY(-50%);
+
+    cursor:pointer;
+
+    color:#666;
+
+    font-size:18px;
+}
+
+.toggle-password:hover{
+
+    color:#2E7D32;
+}
